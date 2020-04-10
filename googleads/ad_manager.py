@@ -186,7 +186,7 @@ class AdManagerClient(googleads.common.CommonClient):
         cls._OPTIONAL_INIT_VALUES))
 
   def __init__(self, oauth2_client, application_name, network_code=None,
-               cache=None, proxy_config=None, timeout=3600,
+               cache=googleads.common.ZeepServiceProxy.NO_CACHE, proxy_config=None, timeout=3600,
                custom_http_headers=None,
                enable_compression=False):
     """Initializes a AdManagerClient.
